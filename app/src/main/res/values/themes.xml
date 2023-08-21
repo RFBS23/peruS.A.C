@@ -1,0 +1,19 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Perusac" parent="Theme.Material3.Light.NoActionBar">
+        <!-- Customize your light theme here.
+        <item name="colorPrimary">@color/transparent</item>
+        -->
+    </style>
+
+    <style name="Theme.Perusac" parent="Base.Theme.Perusac" />
+
+    <style name="Theme.Perusac.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.Perusac.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Theme.Perusac.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+</resources>
