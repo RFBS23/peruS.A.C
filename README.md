@@ -43,5 +43,7 @@ Interfaz movil de una app de abarrote
   <img src="readme/pagorealizado.png" alt="version 1" style="margin-right: 10px; width: 250px; height: 500px;">
 
 </div>
+<br>
+<hr />
 <h3><b>Interfaz de Usuario desarrollada por:</b> Fabrizio Barrios Saavedra (RFBS23 - fabridev)</h3>
 <img src="readme/foter.jpg" width="200" alt="avatar">
