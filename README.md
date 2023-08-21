@@ -17,8 +17,6 @@ Interfaz movil de una app de abarrote
   <h3>parte crear cuenta y efecto loading</h3>
   <br>
   <img src="readme/cargando info.png" alt="version 1.1" style="margin-right: 10px; width: 250px; height: 500px;">
-  <img src="readme/cargando info2.png" alt="version 1.1" style="margin-right: 10px; width: 250px; height: 500px;">
-  <img src="readme/cargando info3.png" alt="version 1" style="margin-right: 10px; width: 250px; height: 500px;">
   <img src="readme/bienvenida.png" alt="version 1" style="margin-right: 10px; width: 250px; height: 500px;">
 
   <h3>parte de contenido de productos y vista</h3>
