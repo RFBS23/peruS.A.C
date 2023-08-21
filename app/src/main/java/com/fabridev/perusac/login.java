@@ -15,9 +15,10 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 public class login extends AppCompatActivity {
+    Button btniniciarsesion;
     EditText correo, contraseña;
     ImageView contraseñaicono;
-    TextView crearcuenta, recuperarcontraseña, btniniciarsesion;
+    TextView crearcuenta, recuperarcontraseña;
     private boolean vercontraseña = false;
 
     @Override

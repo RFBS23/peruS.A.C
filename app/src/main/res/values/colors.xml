@@ -6,4 +6,6 @@
     <color name="border_box">#184CDC</color>
     <color name="transparent">#00184CDC</color>
     <color name="return_bar">#D5D5D5</color>
+    <!-- modal -->
+    <color name="background_modal">#969191</color>
 </resources>

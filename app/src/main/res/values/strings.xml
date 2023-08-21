@@ -12,18 +12,11 @@
     <!-- recuperar -->
     <string name="box_recuperar">correo Electronico, usuario</string>
     <string name="btn_repass">Enviar enlace de inicio de sesión</string>
-    <string name="text_crate">Crear Cuenta Nueva</string>
+    <string name="text_create">Crear Cuenta Nueva</string>
     <string name="txt_return">Volver al inicio de sesion</string>
-    <string name="title_activity_contprod">contprod</string>
-    <string name="navigation_drawer_open">Open navigation drawer</string>
-    <string name="navigation_drawer_close">Close navigation drawer</string>
-    <string name="nav_header_title">Android Studio</string>
-    <string name="nav_header_subtitle">android.studio@android.com</string>
-    <string name="nav_header_desc">Navigation header</string>
-    <string name="action_settings">Settings</string>
 
-    <string name="menu_home">Home</string>
-    <string name="menu_gallery">Gallery</string>
-    <string name="menu_slideshow">Slideshow</string>
+    <!-- modal -->
+    <string name="txt_modal">El Enlace fue enviado Correctamente :)</string>
+    <string name="txt_alert">Mensaje</string>
 
 </resources>
