@@ -15,6 +15,22 @@
     <string name="text_create">Crear Cuenta Nueva</string>
     <string name="txt_return">Volver al inicio de sesion</string>
 
+    <!-- registro -->
+    <string name="txt_name">nombre</string>
+    <string name="txt_apellido">apellidos</string>
+    <string name="txt_nac">fecha nacimiento</string>
+    <string name="txt_user">usuario</string>
+    <string name="return_create">Regístrese</string>
+    <string name="btn_register">Registrarse</string>
+    <string name="description_register">Es posible que las personas que usan nuestro servicio hayan subido tu información de correo a nuestra web. Al registrarte, aceptas nuestras Condiciones, la Política de privacidad y la Política de cookies.</string>
+
+    <!-- cargando -->
+    <string name="txt_pause">Espera un Momento</string>
+    <string name="txt_loading">Cargando ...</string>
+
+    <!-- bienvenida -->
+    <string name="welcome">Bienvenida Barbie Choclo</string>
+
     <!-- modal -->
     <string name="txt_modal">El Enlace fue enviado Correctamente :)</string>
     <string name="txt_alert">Mensaje</string>

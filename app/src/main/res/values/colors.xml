@@ -8,4 +8,7 @@
     <color name="return_bar">#D5D5D5</color>
     <!-- modal -->
     <color name="background_modal">#969191</color>
+
+    <!-- btn bienvenida -->
+    <color name="btncontinuar">#00A160</color>
 </resources>

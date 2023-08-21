@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -9,11 +9,182 @@
     android:orientation="vertical"
     tools:context=".crearcuenta">
 
-    <Button
+    <ImageView
+        android:id="@+id/btnflecha"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="hola"
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
-        android:background="@drawable/fondo_border"/>
-</LinearLayout>
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="10dp"
+        android:src="@raw/regresar"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="80dp"
+        android:layout_marginStart="10dp"
+        android:text="@string/return_create"
+        android:textColor="@color/black"
+        android:textSize="32dp"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:showDividers="middle"
+        android:layout_marginTop="140dp"
+        android:layout_marginBottom="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:showDividers="middle"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/nombre"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/fondo_border"
+                android:hint="@string/txt_name"
+                android:padding="12dp"
+                android:textSize="23sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/btnBuscar"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/fondo_border"
+                android:padding="12dp"
+                android:hint="@string/txt_apellido"
+                android:textSize="23dp"
+                app:cornerRadius="20dp"
+                app:layout_constraintEnd_toEndOf="@+id/nombre"
+                app:layout_constraintStart_toStartOf="@+id/nombre"
+                app:layout_constraintTop_toBottomOf="@+id/nombre" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:showDividers="middle"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/fechanac"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginEnd="20dp"
+                android:inputType="text"
+                android:background="@drawable/fondo_border"
+                android:hint="@string/txt_nac"
+                android:padding="12dp"
+                android:textSize="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/usuario"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/fondo_border"
+                android:padding="12dp"
+                android:hint="@string/txt_user"
+                android:textSize="23dp"
+                app:cornerRadius="20dp"
+                app:layout_constraintEnd_toEndOf="@+id/fechanac"
+                app:layout_constraintStart_toStartOf="@+id/fechanac"
+                app:layout_constraintTop_toBottomOf="@+id/fechanac" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:showDividers="middle"
+            android:layout_marginBottom="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/correo"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:background="@drawable/fondo_border"
+                android:hint="@string/box_email"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:maxLines="1"
+                android:inputType="textEmailAddress"
+                android:textSize="29dp"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/fondo_border">
+
+                <EditText
+                    android:id="@+id/contraseña"
+                    android:layout_toStartOf="@+id/contraseñaicono"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:hint="@string/box_pass"
+                    android:paddingStart="20dp"
+                    android:paddingEnd="20dp"
+                    android:textSize="29dp"
+                    android:inputType="textPassword"
+                    android:maxLines="1"
+                    android:background="@color/transparent"/>
+
+                <ImageView
+                    android:id="@+id/contraseñaicono"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:padding="10dp"
+                    android:src="@raw/eye_show"
+                    android:adjustViewBounds="true"
+                    android:layout_marginEnd="20dp"/>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="290dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="60dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/description_register"
+            android:textAlignment="gravity"
+            android:textSize="14dp"
+            android:textColor="@color/black"/>
+
+        <Button
+            android:id="@+id/btnregistrase"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="20dp"
+            android:gravity="center"
+            android:background="@drawable/btn_efecto"
+            android:layout_marginTop="40dp"
+            android:textAlignment="center"
+            android:text="@string/btn_register"
+            android:textSize="32dp"
+            android:textColor="@color/border_box"
+            android:textAllCaps="false"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

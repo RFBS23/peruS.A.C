@@ -25,9 +25,6 @@ public class login extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
-        //controlar el boton si editext esta vacio
-
-
         //referencias
         loadUI();
 
