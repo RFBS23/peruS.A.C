@@ -25,6 +25,14 @@ public class crearcuenta extends AppCompatActivity {
         //referencia
         loadUI();
 
+        //mostramos la contraseña
+        contraseñaicono.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                mostrarcontraseña(v);
+            }
+        });
+
         //eventos
         btnflecha.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -43,6 +51,8 @@ public class crearcuenta extends AppCompatActivity {
     private void loadUI() {
         btnflecha = findViewById(R.id.btnflecha);
         btnregistrase = findViewById(R.id.btnregistrase);
+        contraseñaicono = findViewById(R.id.contraseñaicono);
+        contraseña = findViewById(R.id.contraseña);
     }
 
     private void abrirActivity(Class nameActivity) {

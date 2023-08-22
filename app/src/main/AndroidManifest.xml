@@ -13,13 +13,13 @@
         android:theme="@style/Theme.Perusac"
         tools:targetApi="31">
         <activity
+            android:name=".contenido"
+            android:exported="false" />
+        <activity
             android:name=".bienvenida"
             android:exported="false" />
         <activity
             android:name=".cargandoinfo"
-            android:exported="false" />
-        <activity
-            android:name=".contenido"
             android:exported="false" />
         <activity
             android:name=".recuperar"

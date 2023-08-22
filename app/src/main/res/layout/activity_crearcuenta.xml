@@ -167,8 +167,9 @@
             android:layout_marginTop="20dp"
             android:text="@string/description_register"
             android:textAlignment="gravity"
+            android:textColor="@color/black"
             android:textSize="14dp"
-            android:textColor="@color/black"/>
+            tools:ignore="TextSizeCheck" />
 
         <Button
             android:id="@+id/btnregistrase"

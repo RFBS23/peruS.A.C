@@ -31,6 +31,10 @@
     <!-- bienvenida -->
     <string name="welcome">Bienvenida Barbie Choclo</string>
 
+    <!-- contenido -->
+    <string name="categories">Categoria</string>
+    <string name="popular">Popular</string>
+
     <!-- modal -->
     <string name="txt_modal">El Enlace fue enviado Correctamente :)</string>
     <string name="txt_alert">Mensaje</string>
