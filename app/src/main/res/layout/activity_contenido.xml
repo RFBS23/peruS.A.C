@@ -4,7 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@raw/fondo"
     tools:context=".contenido">
+
     <ImageView
         android:id="@+id/imageView5"
         android:layout_width="147dp"
@@ -18,7 +20,9 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
     <ImageView
+        android:id="@+id/imageView6"
         android:layout_width="80dp"
         android:layout_height="40dp"
         android:layout_alignParentEnd="true"
@@ -31,8 +35,6 @@
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_marginTop="30dp"
-        android:background="@color/background"
-        android:gravity="center"
         android:padding="10dp"
         android:text="@string/categories"
         android:textAlignment="viewStart"
@@ -41,11 +43,11 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/listcat"
         app:layout_constraintTop_toBottomOf="@+id/imageView5" />
+
     <HorizontalScrollView
         android:id="@+id/listcat"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/background"
         android:layout_marginTop="65dp"
         app:layout_constraintTop_toBottomOf="@+id/imageView5">
         <LinearLayout
@@ -242,6 +244,7 @@
             </androidx.cardview.widget.CardView>
         </LinearLayout>
     </HorizontalScrollView>
+
     <TextView
         android:id="@+id/popular"
         android:layout_width="match_parent"
@@ -251,35 +254,38 @@
         android:padding="10dp"
         android:textAlignment="viewStart"
         android:textStyle="bold"
-        android:gravity="center"
         android:textSize="25sp"
-        android:background="@color/background"
         app:layout_constraintTop_toBottomOf="@+id/listcat" />
+
     <ScrollView
+        android:id="@+id/scrollView2"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:layout_marginTop="336dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        android:layout_marginTop="336dp"
         app:layout_constraintTop_toTopOf="parent">
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
+
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
+
                 <LinearLayout
                     android:id="@id/row1"
                     android:layout_width="0dp"
                     android:layout_height="330dp"
                     android:layout_marginTop="10dp"
-                    android:background="@color/background"
                     android:orientation="horizontal"
                     android:padding="10dp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.0"
                     app:layout_constraintStart_toStartOf="parent">
+
                     <androidx.cardview.widget.CardView
                         android:id="@+id/CardArroz"
                         android:layout_width="0dp"
@@ -287,9 +293,11 @@
                         android:layout_margin="10dp"
                         android:layout_weight="1"
                         app:cardCornerRadius="20dp">
+
                         <RelativeLayout
                             android:layout_width="match_parent"
                             android:layout_height="match_parent">
+
                             <TextView
                                 android:id="@+id/arroz"
                                 android:layout_width="wrap_content"
@@ -302,6 +310,7 @@
                                 android:textColor="#000000"
                                 android:textSize="20sp"
                                 android:textStyle="bold" />
+
                             <TextView
                                 android:id="@+id/subn"
                                 android:layout_width="wrap_content"
@@ -312,6 +321,7 @@
                                 android:textAlignment="viewStart"
                                 android:textColor="#000000"
                                 android:textSize="15sp" />
+
                             <TextView
                                 android:id="@+id/precio1"
                                 android:layout_width="wrap_content"
@@ -323,21 +333,24 @@
                                 android:textAlignment="viewStart"
                                 android:textColor="#000000"
                                 android:textSize="15sp" />
+
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_below="@+id/precio1"
-                                android:paddingStart="10dp"
                                 android:layout_marginTop="3dp"
+                                android:paddingStart="10dp"
                                 android:text="✓ Despacho a Domicilio"
                                 android:textAlignment="viewStart"
                                 android:textColor="#000000"
                                 android:textSize="12sp" />
+
                             <ImageView
                                 android:layout_width="80dp"
                                 android:layout_height="10dp"
                                 android:layout_marginTop="220dp"
                                 android:src="@raw/estrellas" />
+
                             <ImageView
                                 android:id="@+id/imgarroz"
                                 android:layout_width="70dp"
@@ -345,6 +358,7 @@
                                 android:layout_centerHorizontal="true"
                                 android:layout_marginTop="15dp"
                                 android:src="@raw/arroz2" />
+
                             <Button
                                 android:id="@+id/agregar"
                                 android:layout_width="match_parent"
@@ -361,6 +375,7 @@
                                 android:textSize="20dp" />
                         </RelativeLayout>
                     </androidx.cardview.widget.CardView>
+
                     <androidx.cardview.widget.CardView
                         android:id="@+id/CardAceite"
                         android:layout_width="0dp"
@@ -368,9 +383,11 @@
                         android:layout_margin="10dp"
                         android:layout_weight="1"
                         app:cardCornerRadius="20dp">
+
                         <RelativeLayout
                             android:layout_width="match_parent"
                             android:layout_height="match_parent">
+
                             <TextView
                                 android:id="@+id/aceite"
                                 android:layout_width="wrap_content"
@@ -383,6 +400,7 @@
                                 android:textColor="#000000"
                                 android:textSize="20sp"
                                 android:textStyle="bold" />
+
                             <TextView
                                 android:id="@+id/subn2"
                                 android:layout_width="wrap_content"
@@ -393,32 +411,36 @@
                                 android:textAlignment="viewStart"
                                 android:textColor="#000000"
                                 android:textSize="15sp" />
+
                             <TextView
                                 android:id="@+id/precio2"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_below="@+id/subn2"
+                                android:layout_marginTop="5dp"
                                 android:paddingStart="10dp"
                                 android:text="S/ 5.20"
-                                android:layout_marginTop="5dp"
                                 android:textAlignment="viewStart"
                                 android:textColor="#000000"
                                 android:textSize="15sp" />
+
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_below="@+id/precio2"
-                                android:paddingStart="10dp"
                                 android:layout_marginTop="3dp"
+                                android:paddingStart="10dp"
                                 android:text="✓ Despacho a Domicilio"
                                 android:textAlignment="viewStart"
                                 android:textColor="#000000"
                                 android:textSize="12sp" />
+
                             <ImageView
                                 android:layout_width="80dp"
                                 android:layout_height="10dp"
                                 android:layout_marginTop="220dp"
                                 android:src="@raw/estrellas" />
+
                             <ImageView
                                 android:id="@+id/imgaceite"
                                 android:layout_width="70dp"
@@ -426,6 +448,7 @@
                                 android:layout_centerHorizontal="true"
                                 android:layout_marginTop="15dp"
                                 android:src="@raw/aceite2" />
+
                             <Button
                                 android:id="@+id/agregar2"
                                 android:layout_width="match_parent"
@@ -443,17 +466,18 @@
                         </RelativeLayout>
                     </androidx.cardview.widget.CardView>
                 </LinearLayout>
+
                 <LinearLayout
                     android:id="@+id/row2"
                     android:layout_width="0dp"
                     android:layout_height="330dp"
-                    android:background="@color/background"
                     android:orientation="horizontal"
                     android:padding="10dp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.0"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/row1">
+
                     <androidx.cardview.widget.CardView
                         android:id="@+id/CardAzucar"
                         android:layout_width="0dp"
@@ -461,9 +485,11 @@
                         android:layout_margin="10dp"
                         android:layout_weight="1"
                         app:cardCornerRadius="20dp">
+
                         <RelativeLayout
                             android:layout_width="match_parent"
                             android:layout_height="match_parent">
+
                             <TextView
                                 android:id="@+id/azucar"
                                 android:layout_width="wrap_content"
@@ -473,8 +499,9 @@
                                 android:layout_marginTop="10dp"
                                 android:text="Azucar rubia 5kg"
                                 android:textColor="@color/black"
-                                android:textStyle="bold"
-                                android:textSize="20sp" />
+                                android:textSize="20sp"
+                                android:textStyle="bold" />
+
                             <TextView
                                 android:id="@+id/subn3"
                                 android:layout_width="wrap_content"
@@ -485,32 +512,36 @@
                                 android:textAlignment="viewStart"
                                 android:textColor="#000000"
                                 android:textSize="15sp" />
+
                             <TextView
                                 android:id="@+id/precio3"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_below="@+id/subn3"
+                                android:layout_marginTop="5dp"
                                 android:paddingStart="10dp"
                                 android:text="S/ 19.90"
-                                android:layout_marginTop="5dp"
                                 android:textAlignment="viewStart"
                                 android:textColor="#000000"
                                 android:textSize="15sp" />
+
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_below="@+id/precio3"
+                                android:layout_marginTop="3dp"
                                 android:paddingStart="10dp"
                                 android:text="✓ Despacho a Domicilio"
                                 android:textAlignment="viewStart"
-                                android:layout_marginTop="3dp"
                                 android:textColor="#000000"
                                 android:textSize="12dp" />
+
                             <ImageView
                                 android:layout_width="80dp"
                                 android:layout_height="10dp"
                                 android:layout_marginTop="220dp"
                                 android:src="@raw/estrellas" />
+
                             <ImageView
                                 android:id="@+id/imgazucar"
                                 android:layout_width="70dp"
@@ -518,6 +549,7 @@
                                 android:layout_centerHorizontal="true"
                                 android:layout_marginTop="15dp"
                                 android:src="@raw/azucar2" />
+
                             <Button
                                 android:id="@+id/agregar3"
                                 android:layout_width="match_parent"
@@ -534,6 +566,7 @@
                                 android:textSize="20dp" />
                         </RelativeLayout>
                     </androidx.cardview.widget.CardView>
+
                     <androidx.cardview.widget.CardView
                         android:id="@+id/Cardconserva"
                         android:layout_width="0dp"
@@ -541,9 +574,11 @@
                         android:layout_margin="10dp"
                         android:layout_weight="1"
                         app:cardCornerRadius="20dp">
+
                         <RelativeLayout
                             android:layout_width="match_parent"
                             android:layout_height="match_parent">
+
                             <TextView
                                 android:id="@+id/conserva"
                                 android:layout_width="wrap_content"
@@ -553,8 +588,9 @@
                                 android:layout_marginTop="10dp"
                                 android:text="Atún campomar"
                                 android:textColor="@color/black"
-                                android:textStyle="bold"
-                                android:textSize="20sp" />
+                                android:textSize="20sp"
+                                android:textStyle="bold" />
+
                             <TextView
                                 android:id="@+id/subn4"
                                 android:layout_width="wrap_content"
@@ -565,43 +601,48 @@
                                 android:textAlignment="viewStart"
                                 android:textColor="#000000"
                                 android:textSize="15sp" />
+
                             <TextView
                                 android:id="@+id/precio4"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_below="@+id/subn4"
+                                android:layout_marginTop="5dp"
                                 android:paddingStart="10dp"
                                 android:text="S/ 6.10"
-                                android:layout_marginTop="5dp"
                                 android:textAlignment="viewStart"
                                 android:textColor="#000000"
                                 android:textSize="15sp" />
+
                             <TextView
                                 android:id="@+id/retira4"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_below="@+id/precio4"
+                                android:layout_marginTop="3dp"
                                 android:paddingStart="10dp"
                                 android:text="✓ Retira tu Compra"
                                 android:textAlignment="viewStart"
                                 android:textColor="#000000"
-                                android:textSize="12dp"
-                                android:layout_marginTop="3dp"/>
+                                android:textSize="12dp" />
+
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_below="@+id/retira4"
+                                android:layout_marginTop="3dp"
                                 android:paddingStart="10dp"
                                 android:text="✓ Despacho a Domicilio"
                                 android:textAlignment="viewStart"
                                 android:textColor="#000000"
-                                android:layout_marginTop="3dp"
                                 android:textSize="12dp" />
+
                             <ImageView
                                 android:layout_width="80dp"
                                 android:layout_height="10dp"
                                 android:layout_marginTop="220dp"
                                 android:src="@raw/estrellas" />
+
                             <ImageView
                                 android:id="@+id/imgconserva"
                                 android:layout_width="70dp"
@@ -609,6 +650,7 @@
                                 android:layout_centerHorizontal="true"
                                 android:layout_marginTop="15dp"
                                 android:src="@raw/atun" />
+
                             <Button
                                 android:id="@+id/agregar4"
                                 android:layout_width="match_parent"
@@ -626,17 +668,18 @@
                         </RelativeLayout>
                     </androidx.cardview.widget.CardView>
                 </LinearLayout>
+
                 <LinearLayout
                     android:id="@+id/row3"
                     android:layout_width="0dp"
                     android:layout_height="330dp"
-                    android:background="@color/background"
                     android:orientation="horizontal"
                     android:padding="10dp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.0"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/row2">
+
                     <androidx.cardview.widget.CardView
                         android:id="@+id/CardHarina"
                         android:layout_width="0dp"
@@ -644,20 +687,23 @@
                         android:layout_margin="10dp"
                         android:layout_weight="1"
                         app:cardCornerRadius="20dp">
+
                         <RelativeLayout
                             android:layout_width="match_parent"
                             android:layout_height="match_parent">
+
                             <TextView
                                 android:id="@+id/harina"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_below="@+id/imgharina"
-                                android:paddingStart="10dp"
                                 android:layout_marginTop="10dp"
+                                android:paddingStart="10dp"
                                 android:text="Harina Blanca Flor"
                                 android:textColor="@color/black"
-                                android:textStyle="bold"
-                                android:textSize="16sp" />
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+
                             <TextView
                                 android:id="@+id/subn5"
                                 android:layout_width="wrap_content"
@@ -668,43 +714,48 @@
                                 android:textAlignment="viewStart"
                                 android:textColor="#000000"
                                 android:textSize="15sp" />
+
                             <TextView
                                 android:id="@+id/precio5"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_below="@+id/subn5"
+                                android:layout_marginTop="5dp"
                                 android:paddingStart="10dp"
                                 android:text="S/ 9.10"
                                 android:textAlignment="viewStart"
-                                android:layout_marginTop="5dp"
                                 android:textColor="#000000"
                                 android:textSize="15sp" />
+
                             <TextView
                                 android:id="@+id/retira5"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_below="@+id/precio5"
+                                android:layout_marginTop="3dp"
                                 android:paddingStart="10dp"
                                 android:text="✓ Retira tu Compra"
                                 android:textAlignment="viewStart"
                                 android:textColor="#000000"
-                                android:layout_marginTop="3dp"
                                 android:textSize="12dp" />
+
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_below="@+id/retira5"
+                                android:layout_marginTop="3dp"
                                 android:paddingStart="10dp"
                                 android:text="✓ Despacho a Domicilio"
                                 android:textAlignment="viewStart"
-                                android:layout_marginTop="3dp"
                                 android:textColor="#000000"
                                 android:textSize="12dp" />
+
                             <ImageView
                                 android:layout_width="80dp"
                                 android:layout_height="10dp"
                                 android:layout_marginTop="220dp"
                                 android:src="@raw/estrellas" />
+
                             <ImageView
                                 android:id="@+id/imgharina"
                                 android:layout_width="70dp"
@@ -712,6 +763,7 @@
                                 android:layout_centerHorizontal="true"
                                 android:layout_marginTop="15dp"
                                 android:src="@raw/harina2" />
+
                             <Button
                                 android:id="@+id/agrega5"
                                 android:layout_width="match_parent"
@@ -728,6 +780,7 @@
                                 android:textSize="20dp" />
                         </RelativeLayout>
                     </androidx.cardview.widget.CardView>
+
                     <androidx.cardview.widget.CardView
                         android:id="@+id/Cardfideo"
                         android:layout_width="0dp"
@@ -735,9 +788,11 @@
                         android:layout_margin="10dp"
                         android:layout_weight="1"
                         app:cardCornerRadius="20dp">
+
                         <RelativeLayout
                             android:layout_width="match_parent"
                             android:layout_height="match_parent">
+
                             <TextView
                                 android:id="@+id/fideo"
                                 android:layout_width="wrap_content"
@@ -747,8 +802,9 @@
                                 android:layout_marginTop="10dp"
                                 android:text="Fideos Nicolini"
                                 android:textColor="@color/black"
-                                android:textStyle="bold"
-                                android:textSize="20sp" />
+                                android:textSize="20sp"
+                                android:textStyle="bold" />
+
                             <TextView
                                 android:id="@+id/subn6"
                                 android:layout_width="wrap_content"
@@ -759,43 +815,48 @@
                                 android:textAlignment="viewStart"
                                 android:textColor="#000000"
                                 android:textSize="15sp" />
+
                             <TextView
                                 android:id="@+id/precio6"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_below="@+id/subn6"
-                                android:paddingStart="10dp"
                                 android:layout_marginTop="5dp"
+                                android:paddingStart="10dp"
                                 android:text="S/ 5.90"
                                 android:textAlignment="viewStart"
                                 android:textColor="#000000"
                                 android:textSize="15sp" />
+
                             <TextView
                                 android:id="@+id/retira6"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_below="@+id/precio6"
+                                android:layout_marginTop="3dp"
                                 android:paddingStart="10dp"
                                 android:text="✓ Retira tu Compra"
                                 android:textAlignment="viewStart"
                                 android:textColor="#000000"
-                                android:layout_marginTop="3dp"
                                 android:textSize="12dp" />
+
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_below="@+id/retira6"
+                                android:layout_marginTop="3dp"
                                 android:paddingStart="10dp"
                                 android:text="✓ Despacho a Domicilio"
                                 android:textAlignment="viewStart"
                                 android:textColor="#000000"
-                                android:layout_marginTop="3dp"
                                 android:textSize="12dp" />
+
                             <ImageView
                                 android:layout_width="80dp"
                                 android:layout_height="10dp"
                                 android:layout_marginTop="220dp"
                                 android:src="@raw/estrellas" />
+
                             <ImageView
                                 android:id="@+id/imgfideo"
                                 android:layout_width="70dp"
@@ -803,6 +864,7 @@
                                 android:layout_centerHorizontal="true"
                                 android:layout_marginTop="15dp"
                                 android:src="@raw/pasta" />
+
                             <Button
                                 android:id="@+id/agregar6"
                                 android:layout_width="match_parent"
@@ -820,6 +882,7 @@
                         </RelativeLayout>
                     </androidx.cardview.widget.CardView>
                 </LinearLayout>
+
             </androidx.constraintlayout.widget.ConstraintLayout>
         </LinearLayout>
     </ScrollView>

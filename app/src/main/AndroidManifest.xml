@@ -13,6 +13,9 @@
         android:theme="@style/Theme.Perusac"
         tools:targetApi="31">
         <activity
+            android:name=".vista_aceite"
+            android:exported="false" />
+        <activity
             android:name=".contenido"
             android:exported="false" />
         <activity
